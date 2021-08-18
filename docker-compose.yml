@@ -1,0 +1,18 @@
+version: "2.1"
+services:
+  rpiplay:
+    build: ./
+    privileged: true
+    restart: always
+    network_mode: host
+    devices:
+      - /dev/dri
+      - /dev/vchiq
+    group_add:
+      - video
+      - audio
+    environment: 
+        - DBUS_SYSTEM_BUS_ADDRESS=unix:path=/host/run/dbus/system_bus_socket
+    labels:
+        io.balena.features.dbus: '1'
+

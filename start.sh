@@ -1,0 +1,14 @@
+#!/bin/sh
+
+DEVICE_NAME="${AIRPIPLAY_NAME:="Air-Pi-Play@$HOSTNAME"}"
+AUDIO_OUT="${AIRPIPLAY_AUDIO_OUT:="hdmi"}"
+BACKGROUND="${AIRPIPLAY_BACKGROUND:="auto"}"
+LATENCY="${AIRPIPLAY_LATENCY_MODE:=""}"
+ROTATION="-r ${AIRPIPLAY_ROTATION:=""}"
+FLIP="-f ${AIRPIPLAY_FLIP:=""}"
+
+echo "Air-Pi-Play v$(cat VERSION) powered by RpiPlay"
+
+echo "Device is discoverable as ${DEVICE_NAME}"
+
+rpiplay -n $DEVICE_NAME -a $AUDIO_OUT -b $BACKGROUND $LATENCY $ROTATION $FLIP

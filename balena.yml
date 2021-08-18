@@ -1,0 +1,32 @@
+name: Air-Pi-Play
+type: sw.application
+description: >-
+  Turn a Raspberry Pi into an Airplay server to enable screen mirroring on tvs, monitors and projectors.
+assets:
+  repository:
+    type: blob.asset
+    data:
+      url: 'https://github.com/rahul-thakoor/air-pi-play'
+  logo:
+    type: blob.asset
+    data:
+      url: >-
+        https://raw.githubusercontent.com/rahul-thakoor/air-pi-play/master/logo.png
+data:
+  applicationEnvironmentVariables:
+    - AIRPIPLAY_NAME: ""
+    - AIRPIPLAY_AUDIO_OUT: hdmi
+    - AIRPIPLAY_BACKGROUND: auto
+    - AIRPIPLAY_LATENCY_MODE: ""
+    - AIRPIPLAY_ROTATION: ""
+    - AIRPIPLAY_FLIP: ""
+  applicationConfigVariables:
+    - BALENA_HOST_CONFIG_gpu_mem: 256
+  defaultDeviceType: raspberry-pi
+  supportedDeviceTypes:
+    - raspberry-pi
+    - raspberry-pi2
+    - raspberrypi3
+    - raspberrypi4-64
+    - fincm3
+version: 0.1.0
