@@ -17,6 +17,21 @@ RUN cmake --DCMAKE_CXX_FLAGS="-O3" --DCMAKE_C_FLAGS="-O3" .. &&\
     make -j &&\
     make install
 
+RUN install_packages python3-pip python3-setuptools rsync
+
+WORKDIR /rootfs
+
+WORKDIR /usr/src/app
+
+RUN pip3 install git+https://github.com/larsks/dockerize
+
+RUN dockerize -n --verbose -g video -g audio -o /rootfs/ /usr/local/bin/rpiplay &&\
+    rm /rootfs/Dockerfile
+
+FROM busybox:stable
+
+COPY --from=builder /rootfs/ ./
+
 WORKDIR /usr/src/app/
 
 COPY start.sh ./
