@@ -19,7 +19,7 @@ The following [Device Variables](https://www.balena.io/docs/learn/manage/variabl
 |  AIRPIPLAY_NAME |  Text |  Air-Pi-Play@`<hostname>` |  Specify the network name of the AirPlay server
 |  AIRPIPLAY_AUDIO_OUT |`hdmi` or `analog` or `off`  | `hdmi` | Set audio output device
 | AIRPIPLAY_BACKGROUND  | `on` or `auto` or `off`  |  `auto`  | Show black background always, only during active connection, or never |
-AIRPIPLAY_LATENCY_MODE | `-l` | not set |  Enables low-latency mode. Low-latency mode reduces latency by effectively rendering audio and video frames as soon as they are received, ignoring the associated timestamps. As a side effect, playback will be choppy and audio-video sync will be noticably off |
+AIRPIPLAY_LATENCY_MODE | `1` or `0` | `1` |  Enables low-latency mode. Low-latency mode reduces latency by effectively rendering audio and video frames as soon as they are received, ignoring the associated timestamps. As a side effect, playback will be choppy and audio-video sync will be noticably off |
 AIRPIPLAY_ROTATION | `90` or `180` or `270` | not set | Specify image rotation in multiples of 90 degrees |
 AIRPIPLAY_FLIP | `horiz` or `vert` or `both` | not set | Specify image flipping
 

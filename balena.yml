@@ -17,7 +17,7 @@ data:
     - AIRPIPLAY_NAME: ""
     - AIRPIPLAY_AUDIO_OUT: hdmi
     - AIRPIPLAY_BACKGROUND: auto
-    - AIRPIPLAY_LATENCY_MODE: ""
+    - AIRPIPLAY_LATENCY_MODE: 1
     - AIRPIPLAY_ROTATION: ""
     - AIRPIPLAY_FLIP: ""
   applicationConfigVariables:
