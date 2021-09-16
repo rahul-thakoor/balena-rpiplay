@@ -11,7 +11,7 @@ assets:
     type: blob.asset
     data:
       url: >-
-        https://raw.githubusercontent.com/rahul-thakoor/air-pi-play/master/logo.png
+        https://raw.githubusercontent.com/rahul-thakoor/air-pi-play/master/logo.jpg
 data:
   applicationEnvironmentVariables:
     - AIRPIPLAY_NAME: ""
@@ -22,7 +22,7 @@ data:
     - AIRPIPLAY_FLIP: ""
   applicationConfigVariables:
     - BALENA_HOST_CONFIG_gpu_mem: 256
-  defaultDeviceType: raspberry-pi
+  defaultDeviceType: raspberrypi3
   supportedDeviceTypes:
     - raspberry-pi
     - raspberry-pi2
