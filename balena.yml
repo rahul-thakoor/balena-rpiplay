@@ -22,6 +22,7 @@ data:
     - AIRPIPLAY_FLIP: ""
   applicationConfigVariables:
     - BALENA_HOST_CONFIG_gpu_mem: 256
+    - BALENA_HOST_CONFIG_gpu_mem_512: 128
   defaultDeviceType: raspberrypi3
   supportedDeviceTypes:
     - raspberry-pi
@@ -29,4 +30,4 @@ data:
     - raspberrypi3
     - raspberrypi4-64
     - fincm3
-version: 0.2.3
+version: 0.2.4
