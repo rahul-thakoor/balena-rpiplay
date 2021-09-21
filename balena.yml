@@ -2,6 +2,21 @@ name: Air-Pi-Play
 type: sw.application
 description: >-
   Turn a Raspberry Pi into an Airplay server to enable screen mirroring on tvs, monitors and projectors.
+post-provisioning: >-
+  ## Usage instructions
+
+  **Application download**
+
+  Once you power up your device you'll need to allow some time for it to
+  download the application, this typically takes les than one minute but it can take
+  more depending on your internet connection and what device you are using.
+
+  __Note: The device will reboot to apply some device configurations.__
+
+  **Usage**
+
+  When the download is completed the application will start. You should see a
+  an Airplay device from your Apple devices. It will be broascasted with name Airplay@hostname.
 assets:
   repository:
     type: blob.asset
@@ -30,4 +45,4 @@ data:
     - raspberrypi3
     - raspberrypi4-64
     - fincm3
-version: 0.2.4
+version: 0.2.5
