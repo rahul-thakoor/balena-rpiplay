@@ -1,4 +1,4 @@
-FROM balenalib/rpi-raspbian AS builder
+FROM balenalib/rpi-raspbian:buster AS builder
 
 RUN install_packages cmake \
                      libavahi-compat-libdnssd-dev libplist-dev libssl-dev \
