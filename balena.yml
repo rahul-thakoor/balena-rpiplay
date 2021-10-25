@@ -1,7 +1,7 @@
-name: Air-Pi-Play
+name: balena-rpiplay
 type: sw.application
 description: >-
-  Turn a Raspberry Pi into an Airplay server to enable screen mirroring on tvs, monitors and projectors.
+  Turn a Raspberry Pi into an Airplay server using RPiPlay to enable screen mirroring on tvs, monitors and projectors.
 post-provisioning: >-
   ## Usage instructions
 
@@ -17,16 +17,21 @@ post-provisioning: >-
 
   When the download is complete the application will start. You should see
   an Airplay device from your Apple devices. It will be broadcast with the name Airplay@hostname.
+
+  You can cast using your Apple devices. Use Screen Mirroring from the Control Center:
+  - [iOS devices](https://support.apple.com/en-us/HT204289#mirroriOS)
+  - [macOS devices](https://support.apple.com/guide/imac/use-airplay-apdf1417128d/mac)
+
 assets:
   repository:
     type: blob.asset
     data:
-      url: 'https://github.com/rahul-thakoor/air-pi-play'
+      url: 'https://github.com/rahul-thakoor/balena-rpiplay'
   logo:
     type: blob.asset
     data:
       url: >-
-        https://raw.githubusercontent.com/rahul-thakoor/air-pi-play/master/logo.png
+        https://raw.githubusercontent.com/rahul-thakoor/balena-rpiplay/master/logo.png
 data:
   applicationEnvironmentVariables:
     - AIRPIPLAY_NAME: ""
@@ -45,4 +50,4 @@ data:
     - raspberrypi3
     - raspberrypi4-64
     - fincm3
-version: 0.2.6
+version: 0.2.7
