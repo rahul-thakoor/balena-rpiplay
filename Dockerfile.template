@@ -28,7 +28,7 @@ RUN pip3 install git+https://github.com/larsks/dockerize
 RUN dockerize -n --verbose -g video -g audio -o /rootfs/ /usr/local/bin/rpiplay &&\
     rm /rootfs/Dockerfile
 
-FROM busybox:stable
+FROM --platform=linux/arm/v6 busybox:stable
 
 COPY --from=builder /rootfs/ ./
 
