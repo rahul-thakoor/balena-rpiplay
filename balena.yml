@@ -47,7 +47,8 @@ data:
   supportedDeviceTypes:
     - raspberry-pi
     - raspberry-pi2
+    - raspberrypi0-2w-64
     - raspberrypi3
     - raspberrypi4-64
     - fincm3
-version: 0.2.8
+version: 0.3.0
