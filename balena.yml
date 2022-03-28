@@ -43,6 +43,7 @@ data:
   applicationConfigVariables:
     - BALENA_HOST_CONFIG_gpu_mem: 256
     - BALENA_HOST_CONFIG_gpu_mem_512: 128
+    - BALENA_HOST_CONFIG_dtoverlay: vc4-fkms-v3d
   defaultDeviceType: raspberrypi3
   supportedDeviceTypes:
     - raspberry-pi
@@ -51,4 +52,4 @@ data:
     - raspberrypi3
     - raspberrypi4-64
     - fincm3
-version: 0.3.0
+version: 0.3.1
